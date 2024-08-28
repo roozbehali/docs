@@ -1,0 +1,44 @@
+---
+title: "Discord"
+description: "Set up Butler to work with Discord"
+---
+
+## Features
+
+Butler is a Discord bot that captures your Discord server's
+messages in real-time. On top of capturing data for use in the
+main app, the bot has two slash commands:
+
+1. `/summarize` - Butler will generate a summary of your server's messages for the
+   past hour.
+
+2. `/ask` - Butler will contextually answer a question about your server's messages.
+
+## Setup
+
+<Steps>
+	<Step title="Invite Butler to your server">
+		After clicking the `connect` button, you'll be redirected to Discord's OAuth page.
+		<Frame caption="Select a server here">
+			<img src="/images/invite_code.png" />
+		</Frame>
+		<Warning>
+			Butler can currently only be in one server at a time. 
+		</Warning>
+	</Step>
+	<Step title="Guild ID">
+    	Navigate to our settings page and find your Butler organization ID. You will be prompted
+        to enter this ID in the Butler Discord bot settings.
+		<Frame>
+			<img src="/images/team_invite.png" />
+		</Frame>
+    </Step>
+
+</Steps>
+
+## FAQs
+
+<Accordion title="What happens if I delete a Discord message?">
+	Deletions are also tracked in real-time, and will be removed from your Butler
+	context.
+</Accordion>
